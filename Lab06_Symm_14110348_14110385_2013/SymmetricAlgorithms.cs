@@ -25,9 +25,12 @@ namespace Lab06_Symm_14110348_14110385_2013
         {
             if (this.radRC2.Checked)
             {
-                symmAthm.setKey(key);
-                symmAthm.setIV(iv);
-
+                //symmAthm.setKey(key);
+                //symmAthm.setIV(iv);
+                string plainText = "Nguyen Tuan Kiet";
+                byte[] encrypted = symmAthm.encrypt(plainText, key, iv);
+                this.txttextString.Text = BitConverter.ToString(encrypted);
+                this.txtrecoveredplaintext.Text = symmAthm.decrypt(encrypted, key, iv);
             }
         }
 
@@ -61,6 +64,11 @@ namespace Lab06_Symm_14110348_14110385_2013
                 key = symmAthm.getKey();
                 this.txtKey.Text = BitConverter.ToString(symmAthm.getKey());
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

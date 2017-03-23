@@ -76,15 +76,5 @@ namespace Lab06_Symm_14110348_14110385_2013
             key = rc2CSP.Key;
             return key;
         }
-
-        public void setKey(byte[] key)
-        {
-            this.key = key;
-        }
-
-        public void setIV(byte[] iv)
-        {
-            this.iv = iv;
-        }
     }
 }

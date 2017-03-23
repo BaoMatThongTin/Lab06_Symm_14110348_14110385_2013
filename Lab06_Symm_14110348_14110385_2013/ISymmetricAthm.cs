@@ -12,7 +12,5 @@ namespace Lab06_Symm_14110348_14110385_2013
         string decrypt(byte[] encrypted, byte[] key, byte[] iv);
         byte[] getKey();
         byte[] getIV();
-        void setKey(byte[] key);
-        void setIV(byte[] iv);
     }
 }

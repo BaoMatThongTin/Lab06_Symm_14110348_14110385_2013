@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -21,17 +22,29 @@ namespace Lab06_Symm_14110348_14110385_2013
             InitializeComponent();
         }
 
-        private void btnEncrypted_Click(object sender, EventArgs e)
+        private void btnEncrypt_Click(object sender, EventArgs e)
         {
-            if (this.radRC2.Checked)
+            string plainText = "Nguyen Tuan Kiet";
+            byte[] encrypted = symmAthm.encrypt(plainText, key, iv);
+            foreach (byte b in encrypted)
             {
-                //symmAthm.setKey(key);
-                //symmAthm.setIV(iv);
-                string plainText = "Nguyen Tuan Kiet";
-                byte[] encrypted = symmAthm.encrypt(plainText, key, iv);
-                this.txttextString.Text = BitConverter.ToString(encrypted);
-                this.txtrecoveredplaintext.Text = symmAthm.decrypt(encrypted, key, iv);
+                this.txttextString.Text += b.ToString() + " ";
             }
+            
+            this.txtByteArray.Text = BitConverter.ToString(encrypted);
+        }
+        private void btnDecrypt_Click(object sender, EventArgs e)
+        {
+            string encryptText = this.txtByteArray.Text;
+            string[] tempt = encryptText.Split('-');
+            byte[] encrypted = new byte[tempt.Length];
+            int i = 0;
+            foreach (string s in tempt)
+            {
+                encrypted[i] = Convert.ToByte(Convert.ToInt32(s, 16));
+                i++;
+            }
+            this.txtrecoveredplaintext.Text = symmAthm.decrypt(encrypted, key, iv);
         }
 
         private void bntKey_Click(object sender, EventArgs e)
@@ -66,9 +79,6 @@ namespace Lab06_Symm_14110348_14110385_2013
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.txtByteArray = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDecrypt = new System.Windows.Forms.Button();
             this.txtrecoveredplaintext = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txttextString = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnEncrypted = new System.Windows.Forms.Button();
+            this.btnEncrypt = new System.Windows.Forms.Button();
             this.txtplaintex = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -69,17 +69,17 @@
             this.txtByteArray.Size = new System.Drawing.Size(532, 63);
             this.txtByteArray.TabIndex = 0;
             // 
-            // button1
+            // btnDecrypt
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.Location = new System.Drawing.Point(906, 310);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 32);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Decrypt";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnDecrypt.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnDecrypt.Location = new System.Drawing.Point(906, 310);
+            this.btnDecrypt.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDecrypt.Name = "btnDecrypt";
+            this.btnDecrypt.Size = new System.Drawing.Size(103, 32);
+            this.btnDecrypt.TabIndex = 20;
+            this.btnDecrypt.Text = "Decrypt";
+            this.btnDecrypt.UseVisualStyleBackColor = true;
+            this.btnDecrypt.Click += new System.EventHandler(this.btnDecrypt_Click);
             // 
             // txtrecoveredplaintext
             // 
@@ -137,17 +137,17 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ciphertext displayed as Text String";
             // 
-            // btnEncrypted
+            // btnEncrypt
             // 
-            this.btnEncrypted.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnEncrypted.Location = new System.Drawing.Point(906, 101);
-            this.btnEncrypted.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEncrypted.Name = "btnEncrypted";
-            this.btnEncrypted.Size = new System.Drawing.Size(103, 32);
-            this.btnEncrypted.TabIndex = 17;
-            this.btnEncrypted.Text = "Encrypt";
-            this.btnEncrypted.UseVisualStyleBackColor = true;
-            this.btnEncrypted.Click += new System.EventHandler(this.btnEncrypted_Click);
+            this.btnEncrypt.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnEncrypt.Location = new System.Drawing.Point(906, 101);
+            this.btnEncrypt.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEncrypt.Name = "btnEncrypt";
+            this.btnEncrypt.Size = new System.Drawing.Size(103, 32);
+            this.btnEncrypt.TabIndex = 17;
+            this.btnEncrypt.Text = "Encrypt";
+            this.btnEncrypt.UseVisualStyleBackColor = true;
+            this.btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
             // 
             // txtplaintex
             // 
@@ -247,7 +247,6 @@
             this.radRijndael.TabStop = true;
             this.radRijndael.Text = "Rijndael";
             this.radRijndael.UseVisualStyleBackColor = true;
-            
             // 
             // radTripleDES
             // 
@@ -325,8 +324,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 438);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnEncrypted);
+            this.Controls.Add(this.btnDecrypt);
+            this.Controls.Add(this.btnEncrypt);
             this.Controls.Add(this.txtKey);
             this.Controls.Add(this.bntInitVector);
             this.Controls.Add(this.bntKey);
@@ -356,12 +355,12 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtByteArray;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDecrypt;
         private System.Windows.Forms.TextBox txtrecoveredplaintext;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox txttextString;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btnEncrypted;
+        private System.Windows.Forms.Button btnEncrypt;
         private System.Windows.Forms.TextBox txtplaintex;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox2;

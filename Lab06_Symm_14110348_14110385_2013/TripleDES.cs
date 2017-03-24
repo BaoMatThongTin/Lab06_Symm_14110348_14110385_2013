@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -8,22 +7,19 @@ using System.Threading.Tasks;
 
 namespace Lab06_Symm_14110348_14110385_2013
 {
-    class RC2 : ISymmetricAthm
+    class TripleDES : ISymmetricAthm
     {
-        RC2CryptoServiceProvider rc2CSP;
+        TripleDESCryptoServiceProvider tripledesCSP;
         byte[] key;
         byte[] iv;
-        public RC2()
+        public TripleDES()
         {
-            rc2CSP = new RC2CryptoServiceProvider();
-            //Random r = new Random();
-
-            //rc2CSP.KeySize = r.Next(5,16)*8;
+            tripledesCSP = new TripleDESCryptoServiceProvider();
         }
         public string decrypt(byte[] encrypted, byte[] key, byte[] iv)
         {
             //Get a decryptor that uses the same key and IV as the encryptor.
-            ICryptoTransform decryptor = rc2CSP.CreateDecryptor(key, iv);
+            ICryptoTransform decryptor = tripledesCSP.CreateDecryptor(key, iv);
 
             Symmetric symm = new Symmetric();
 
@@ -35,7 +31,7 @@ namespace Lab06_Symm_14110348_14110385_2013
             this.key = key;
             this.iv = iv;
             // Get an encryptor.
-            ICryptoTransform encryptor = rc2CSP.CreateEncryptor(key, iv);
+            ICryptoTransform encryptor = tripledesCSP.CreateEncryptor(key, iv);
 
             Symmetric symm = new Symmetric();
 
@@ -44,13 +40,13 @@ namespace Lab06_Symm_14110348_14110385_2013
 
         public byte[] getIV()
         {
-            iv = rc2CSP.IV;
+            iv = tripledesCSP.IV;
             return iv;
         }
 
         public byte[] getKey()
         {
-            key = rc2CSP.Key;
+            key = tripledesCSP.Key;
             return key;
         }
     }

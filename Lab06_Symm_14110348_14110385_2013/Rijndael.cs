@@ -8,22 +8,19 @@ using System.Threading.Tasks;
 
 namespace Lab06_Symm_14110348_14110385_2013
 {
-    class RC2 : ISymmetricAthm
+    class Rijndael : ISymmetricAthm
     {
-        RC2CryptoServiceProvider rc2CSP;
+        RijndaelManaged rijndaelCSP;
         byte[] key;
         byte[] iv;
-        public RC2()
+        public Rijndael()
         {
-            rc2CSP = new RC2CryptoServiceProvider();
-            //Random r = new Random();
-
-            //rc2CSP.KeySize = r.Next(5,16)*8;
+            rijndaelCSP = new RijndaelManaged();
         }
         public string decrypt(byte[] encrypted, byte[] key, byte[] iv)
         {
             //Get a decryptor that uses the same key and IV as the encryptor.
-            ICryptoTransform decryptor = rc2CSP.CreateDecryptor(key, iv);
+            ICryptoTransform decryptor = rijndaelCSP.CreateDecryptor(key, iv);
 
             Symmetric symm = new Symmetric();
 
@@ -35,7 +32,7 @@ namespace Lab06_Symm_14110348_14110385_2013
             this.key = key;
             this.iv = iv;
             // Get an encryptor.
-            ICryptoTransform encryptor = rc2CSP.CreateEncryptor(key, iv);
+            ICryptoTransform encryptor = rijndaelCSP.CreateEncryptor(key, iv);
 
             Symmetric symm = new Symmetric();
 
@@ -44,13 +41,13 @@ namespace Lab06_Symm_14110348_14110385_2013
 
         public byte[] getIV()
         {
-            iv = rc2CSP.IV;
+            iv = rijndaelCSP.IV;
             return iv;
         }
 
         public byte[] getKey()
         {
-            key = rc2CSP.Key;
+            key = rijndaelCSP.Key;
             return key;
         }
     }

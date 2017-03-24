@@ -44,8 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DES.cs" />
     <Compile Include="ISymmetricAthm.cs" />
     <Compile Include="RC2.cs" />
+    <Compile Include="Rijndael.cs" />
+    <Compile Include="Symmetric.cs" />
     <Compile Include="SymmetricAlgorithms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +57,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TripleDES.cs" />
     <EmbeddedResource Include="SymmetricAlgorithms.resx">
       <DependentUpon>SymmetricAlgorithms.cs</DependentUpon>
     </EmbeddedResource>

@@ -139,7 +139,25 @@ namespace Lab06_Symm_14110348_14110385_2013
             {
                 symmAthm = new RC2();
                 key = symmAthm.getKey();
-                this.txtKey.Text = BitConverter.ToString(symmAthm.getKey());
+                this.txtKey.Text = BitConverter.ToString(key);
+            }
+            else if (this.radRijndael.Checked)
+            {
+                symmAthm = new Rijndael();
+                key = symmAthm.getKey();
+                this.txtKey.Text = BitConverter.ToString(key);
+            }
+            else if (this.radDES.Checked)
+            {
+                symmAthm = new DES();
+                key = symmAthm.getKey();
+                this.txtKey.Text = BitConverter.ToString(key);
+            }
+            else if (this.radTripleDES.Checked)
+            {
+                symmAthm = new TripleDES();
+                key = symmAthm.getKey();
+                this.txtKey.Text = BitConverter.ToString(key);
             }
         }
 
@@ -149,7 +167,25 @@ namespace Lab06_Symm_14110348_14110385_2013
             {
                 symmAthm = new RC2();
                 iv = symmAthm.getIV();
-                this.txtinitVector.Text = BitConverter.ToString(symmAthm.getIV());
+                this.txtinitVector.Text = BitConverter.ToString(iv);
+            }
+            else if (this.radRijndael.Checked)
+            {
+                symmAthm = new Rijndael();
+                iv = symmAthm.getIV();
+                this.txtinitVector.Text = BitConverter.ToString(iv);
+            }
+            else if (this.radDES.Checked)
+            {
+                symmAthm = new DES();
+                iv = symmAthm.getIV();
+                this.txtinitVector.Text = BitConverter.ToString(iv);
+            }
+            else if (this.radTripleDES.Checked)
+            {
+                symmAthm = new TripleDES();
+                iv = symmAthm.getIV();
+                this.txtinitVector.Text = BitConverter.ToString(iv);
             }
         }
 
@@ -165,11 +201,50 @@ namespace Lab06_Symm_14110348_14110385_2013
                 this.txtKey.Text = BitConverter.ToString(symmAthm.getKey());
             }
         }
+        
+        private void radRijndael_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.radRijndael.Checked)
+            {
+                symmAthm = new Rijndael();
+
+                iv = symmAthm.getIV();
+                this.txtinitVector.Text = BitConverter.ToString(symmAthm.getIV());
+                key = symmAthm.getKey();
+                this.txtKey.Text = BitConverter.ToString(symmAthm.getKey());
+            }
+        }
+
+        private void radDES_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.radDES.Checked)
+            {
+                symmAthm = new DES();
+
+                iv = symmAthm.getIV();
+                this.txtinitVector.Text = BitConverter.ToString(symmAthm.getIV());
+                key = symmAthm.getKey();
+                this.txtKey.Text = BitConverter.ToString(symmAthm.getKey());
+            }
+        }
+
+        private void radTripleDES_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.radTripleDES.Checked)
+            {
+                symmAthm = new TripleDES();
+
+                iv = symmAthm.getIV();
+                this.txtinitVector.Text = BitConverter.ToString(symmAthm.getIV());
+                key = symmAthm.getKey();
+                this.txtKey.Text = BitConverter.ToString(symmAthm.getKey());
+            }
+        }
         private string SelectFile(string initialDirectory, string filter)
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = filter;
-               
+
             dialog.InitialDirectory = initialDirectory;
             dialog.Title = "Select a file";
             return (dialog.ShowDialog() == DialogResult.OK)
@@ -184,5 +259,6 @@ namespace Lab06_Symm_14110348_14110385_2013
             return (dialog.ShowDialog() == DialogResult.OK)
                ? dialog.FileName : null;
         }
+
     }
 }

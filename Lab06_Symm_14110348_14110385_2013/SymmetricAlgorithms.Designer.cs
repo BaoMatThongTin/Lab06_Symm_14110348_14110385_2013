@@ -251,6 +251,7 @@
             this.radRijndael.TabStop = true;
             this.radRijndael.Text = "Rijndael";
             this.radRijndael.UseVisualStyleBackColor = true;
+            this.radRijndael.CheckedChanged += new System.EventHandler(this.radRijndael_CheckedChanged);
             // 
             // radTripleDES
             // 
@@ -263,6 +264,7 @@
             this.radTripleDES.TabStop = true;
             this.radTripleDES.Text = "Triple DES";
             this.radTripleDES.UseVisualStyleBackColor = true;
+            this.radTripleDES.CheckedChanged += new System.EventHandler(this.radTripleDES_CheckedChanged);
             // 
             // radDES
             // 
@@ -275,6 +277,7 @@
             this.radDES.TabStop = true;
             this.radDES.Text = "DES";
             this.radDES.UseVisualStyleBackColor = true;
+            this.radDES.CheckedChanged += new System.EventHandler(this.radDES_CheckedChanged);
             // 
             // txtinitVector
             // 

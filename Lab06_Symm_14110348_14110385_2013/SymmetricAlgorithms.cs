@@ -24,13 +24,13 @@ namespace Lab06_Symm_14110348_14110385_2013
 
         private void btnEncrypt_Click(object sender, EventArgs e)
         {
-            string plainText = "Nguyen Tuan Kiet";
+            string plainText = "Nguyễn Tuấn Kiệt";
             byte[] encrypted = symmAthm.encrypt(plainText, key, iv);
             foreach (byte b in encrypted)
             {
                 this.txttextString.Text += b.ToString() + " ";
             }
-            
+            //this.txttextString.Text = System.Text.Encoding.Unicode.GetString(encrypted);
             this.txtByteArray.Text = BitConverter.ToString(encrypted);
         }
         private void btnDecrypt_Click(object sender, EventArgs e)

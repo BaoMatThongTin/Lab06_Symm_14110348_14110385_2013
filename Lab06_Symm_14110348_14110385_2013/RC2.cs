@@ -25,21 +25,23 @@ namespace Lab06_Symm_14110348_14110385_2013
 
             // Read the decrypted bytes from the decrypting stream
             // and place them in a StringBuilder class.
-
+            System.Text.Encoding.UTF8.GetString(encrypted);
             StringBuilder roundtrip = new StringBuilder();
 
             int b = 0;
-
+            byte[] decrypted = new byte[encrypted.Length];
+            int i = 0;
             do
             {
                 b = csDecrypt.ReadByte();
-
+                
                 if (b != -1)
                 {
-                    roundtrip.Append((char)b);
+                    decrypted[i++] = (byte)b;
                 }
 
             } while (b != -1);
+            roundtrip.Append(System.Text.Encoding.UTF8.GetString(decrypted));
             return roundtrip.ToString();
         }
 

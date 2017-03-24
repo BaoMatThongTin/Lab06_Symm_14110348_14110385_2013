@@ -137,7 +137,7 @@ namespace Lib
         public static bool WriteBinFile_CSymm4(string sFilePath, byte[] Data)
         {
             bool bl = true;
-            using (Stream writer = new FileStream(sFilePath, FileMode.Open))
+            using (Stream writer = new FileStream(sFilePath, FileMode.OpenOrCreate))
             {
                 try
                 {

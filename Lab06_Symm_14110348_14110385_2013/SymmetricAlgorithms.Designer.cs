@@ -66,6 +66,7 @@
             this.txtByteArray.Multiline = true;
             this.txtByteArray.Name = "txtByteArray";
             this.txtByteArray.ReadOnly = true;
+            this.txtByteArray.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtByteArray.Size = new System.Drawing.Size(532, 63);
             this.txtByteArray.TabIndex = 0;
             // 
@@ -91,6 +92,7 @@
             this.txtrecoveredplaintext.Multiline = true;
             this.txtrecoveredplaintext.Name = "txtrecoveredplaintext";
             this.txtrecoveredplaintext.ReadOnly = true;
+            this.txtrecoveredplaintext.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtrecoveredplaintext.Size = new System.Drawing.Size(532, 66);
             this.txtrecoveredplaintext.TabIndex = 0;
             // 
@@ -119,6 +121,7 @@
             this.txttextString.Multiline = true;
             this.txttextString.Name = "txttextString";
             this.txttextString.ReadOnly = true;
+            this.txttextString.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txttextString.Size = new System.Drawing.Size(532, 63);
             this.txttextString.TabIndex = 0;
             // 
@@ -158,6 +161,7 @@
             this.txtplaintex.Margin = new System.Windows.Forms.Padding(4);
             this.txtplaintex.Multiline = true;
             this.txtplaintex.Name = "txtplaintex";
+            this.txtplaintex.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtplaintex.Size = new System.Drawing.Size(532, 63);
             this.txtplaintex.TabIndex = 0;
             // 

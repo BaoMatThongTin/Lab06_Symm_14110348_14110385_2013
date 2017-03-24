@@ -10,9 +10,16 @@ namespace Lab06_Symm_14110348_14110385_2013
 {
     class RC2 : ISymmetricAthm
     {
-        RC2CryptoServiceProvider rc2CSP = new RC2CryptoServiceProvider();
+        RC2CryptoServiceProvider rc2CSP;
         byte[] key;
         byte[] iv;
+        public RC2()
+        {
+            rc2CSP = new RC2CryptoServiceProvider();
+            //Random r = new Random();
+
+            //rc2CSP.KeySize = r.Next(5,16)*8;
+        }
         public string decrypt(byte[] encrypted, byte[] key, byte[] iv)
         {
             //Get a decryptor that uses the same key and IV as the encryptor.
@@ -25,7 +32,18 @@ namespace Lab06_Symm_14110348_14110385_2013
 
             // Read the decrypted bytes from the decrypting stream
             // and place them in a StringBuilder class.
-            System.Text.Encoding.UTF8.GetString(encrypted);
+            //MemoryStream stream = new MemoryStream();
+            //csDecrypt.CopyTo(stream);
+            //stream.Position = 0;
+            //StreamReader R = new StreamReader(stream);
+            //string outputText = R.ReadToEnd();
+
+            //// Close the streams.
+            //R.Close();
+            //csDecrypt.Close();
+            //msDecrypt.Close();
+
+            //return outputText;
             StringBuilder roundtrip = new StringBuilder();
 
             int b = 0;
@@ -33,14 +51,21 @@ namespace Lab06_Symm_14110348_14110385_2013
             int i = 0;
             do
             {
-                b = csDecrypt.ReadByte();
-                
-                if (b != -1)
+                try
                 {
-                    decrypted[i++] = (byte)b;
+                    b = csDecrypt.ReadByte();
+                    if (b != -1)
+                    {
+                        decrypted[i++] = (byte)b;
+                    }
                 }
-
-            } while (b != -1);
+                catch(Exception e)
+                {
+                    i++;
+                }
+                //b = csDecrypt.ReadByte();
+                
+            } while (b != -1 && i< encrypted.Length);
             roundtrip.Append(System.Text.Encoding.UTF8.GetString(decrypted));
             return roundtrip.ToString();
         }

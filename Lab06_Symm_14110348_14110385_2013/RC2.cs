@@ -16,9 +16,8 @@ namespace Lab06_Symm_14110348_14110385_2013
         public RC2()
         {
             rc2CSP = new RC2CryptoServiceProvider();
-            //Random r = new Random();
-
-            //rc2CSP.KeySize = r.Next(5,16)*8;
+            Random r = new Random();
+            rc2CSP.KeySize = r.Next(5, 16) * 8;
         }
         public string decrypt(byte[] encrypted, byte[] key, byte[] iv)
         {

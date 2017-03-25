@@ -16,6 +16,9 @@ namespace Lab06_Symm_14110348_14110385_2013
         public Rijndael()
         {
             rijndaelCSP = new RijndaelManaged();
+            Random r = new Random();
+            int[] size = { 128, 192, 256 };
+            rijndaelCSP.KeySize = size[r.Next(3)];
         }
         public string decrypt(byte[] encrypted, byte[] key, byte[] iv)
         {

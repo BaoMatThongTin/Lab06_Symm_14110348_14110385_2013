@@ -74,6 +74,10 @@ namespace Lab06_Symm_14110348_14110385_2013
         private void btnDecrypt_Click(object sender, EventArgs e)
         {
             //1.
+            txtplaintex.Text = "";
+            txtKey.Text = "";
+            txtinitVector.Text = "";
+            txttextString.Text = "";
             MessageBox.Show("Hãy chọn tập tin đã bị mã hóa!");
             string curentDirectory = System.IO.Directory.GetCurrentDirectory();
             string filter1 = "L team files (*.L)|*.L";

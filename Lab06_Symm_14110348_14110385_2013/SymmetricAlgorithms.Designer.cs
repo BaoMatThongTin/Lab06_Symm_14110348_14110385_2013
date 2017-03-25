@@ -61,22 +61,20 @@
             this.txtByteArray.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtByteArray.Location = new System.Drawing.Point(29, 27);
-            this.txtByteArray.Margin = new System.Windows.Forms.Padding(4);
+            this.txtByteArray.Location = new System.Drawing.Point(22, 22);
             this.txtByteArray.Multiline = true;
             this.txtByteArray.Name = "txtByteArray";
             this.txtByteArray.ReadOnly = true;
             this.txtByteArray.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtByteArray.Size = new System.Drawing.Size(532, 63);
+            this.txtByteArray.Size = new System.Drawing.Size(400, 53);
             this.txtByteArray.TabIndex = 0;
             // 
             // btnDecrypt
             // 
             this.btnDecrypt.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnDecrypt.Location = new System.Drawing.Point(906, 310);
-            this.btnDecrypt.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDecrypt.Location = new System.Drawing.Point(680, 252);
             this.btnDecrypt.Name = "btnDecrypt";
-            this.btnDecrypt.Size = new System.Drawing.Size(103, 32);
+            this.btnDecrypt.Size = new System.Drawing.Size(77, 26);
             this.btnDecrypt.TabIndex = 20;
             this.btnDecrypt.Text = "Decrypt";
             this.btnDecrypt.UseVisualStyleBackColor = true;
@@ -87,13 +85,12 @@
             this.txtrecoveredplaintext.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtrecoveredplaintext.Location = new System.Drawing.Point(29, 23);
-            this.txtrecoveredplaintext.Margin = new System.Windows.Forms.Padding(4);
+            this.txtrecoveredplaintext.Location = new System.Drawing.Point(22, 19);
             this.txtrecoveredplaintext.Multiline = true;
             this.txtrecoveredplaintext.Name = "txtrecoveredplaintext";
             this.txtrecoveredplaintext.ReadOnly = true;
             this.txtrecoveredplaintext.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtrecoveredplaintext.Size = new System.Drawing.Size(532, 66);
+            this.txtrecoveredplaintext.Size = new System.Drawing.Size(400, 54);
             this.txtrecoveredplaintext.TabIndex = 0;
             // 
             // groupBox4
@@ -102,11 +99,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.txtrecoveredplaintext);
-            this.groupBox4.Location = new System.Drawing.Point(4, 310);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Location = new System.Drawing.Point(3, 252);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(589, 97);
+            this.groupBox4.Size = new System.Drawing.Size(442, 79);
             this.groupBox4.TabIndex = 21;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Recovered Plaintext";
@@ -116,13 +111,12 @@
             this.txttextString.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txttextString.Location = new System.Drawing.Point(29, 27);
-            this.txttextString.Margin = new System.Windows.Forms.Padding(4);
+            this.txttextString.Location = new System.Drawing.Point(22, 22);
             this.txttextString.Multiline = true;
             this.txttextString.Name = "txttextString";
             this.txttextString.ReadOnly = true;
             this.txttextString.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txttextString.Size = new System.Drawing.Size(532, 63);
+            this.txttextString.Size = new System.Drawing.Size(400, 53);
             this.txttextString.TabIndex = 0;
             // 
             // groupBox3
@@ -131,11 +125,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.txttextString);
-            this.groupBox3.Location = new System.Drawing.Point(4, 106);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Location = new System.Drawing.Point(3, 86);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(589, 94);
+            this.groupBox3.Size = new System.Drawing.Size(442, 77);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ciphertext displayed as Text String";
@@ -143,10 +135,9 @@
             // btnEncrypt
             // 
             this.btnEncrypt.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnEncrypt.Location = new System.Drawing.Point(906, 101);
-            this.btnEncrypt.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEncrypt.Location = new System.Drawing.Point(680, 82);
             this.btnEncrypt.Name = "btnEncrypt";
-            this.btnEncrypt.Size = new System.Drawing.Size(103, 32);
+            this.btnEncrypt.Size = new System.Drawing.Size(77, 26);
             this.btnEncrypt.TabIndex = 17;
             this.btnEncrypt.Text = "Encrypt";
             this.btnEncrypt.UseVisualStyleBackColor = true;
@@ -157,12 +148,11 @@
             this.txtplaintex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtplaintex.Location = new System.Drawing.Point(29, 23);
-            this.txtplaintex.Margin = new System.Windows.Forms.Padding(4);
+            this.txtplaintex.Location = new System.Drawing.Point(22, 19);
             this.txtplaintex.Multiline = true;
             this.txtplaintex.Name = "txtplaintex";
             this.txtplaintex.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtplaintex.Size = new System.Drawing.Size(532, 63);
+            this.txtplaintex.Size = new System.Drawing.Size(400, 53);
             this.txtplaintex.TabIndex = 0;
             // 
             // groupBox5
@@ -171,11 +161,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.Controls.Add(this.txtByteArray);
-            this.groupBox5.Location = new System.Drawing.Point(4, 208);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Location = new System.Drawing.Point(3, 169);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Size = new System.Drawing.Size(589, 94);
+            this.groupBox5.Size = new System.Drawing.Size(442, 77);
             this.groupBox5.TabIndex = 19;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Ciphertext Displayed as Byte Array";
@@ -186,31 +174,27 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.txtplaintex);
-            this.groupBox2.Location = new System.Drawing.Point(4, 4);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(589, 94);
+            this.groupBox2.Size = new System.Drawing.Size(442, 77);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Plain Text";
             // 
             // txtKey
             // 
-            this.txtKey.Location = new System.Drawing.Point(7, 188);
-            this.txtKey.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKey.Location = new System.Drawing.Point(5, 153);
             this.txtKey.Multiline = true;
             this.txtKey.Name = "txtKey";
             this.txtKey.ReadOnly = true;
-            this.txtKey.Size = new System.Drawing.Size(286, 62);
+            this.txtKey.Size = new System.Drawing.Size(216, 51);
             this.txtKey.TabIndex = 14;
             // 
             // bntInitVector
             // 
-            this.bntInitVector.Location = new System.Drawing.Point(65, 270);
-            this.bntInitVector.Margin = new System.Windows.Forms.Padding(4);
+            this.bntInitVector.Location = new System.Drawing.Point(49, 219);
             this.bntInitVector.Name = "bntInitVector";
-            this.bntInitVector.Size = new System.Drawing.Size(179, 32);
+            this.bntInitVector.Size = new System.Drawing.Size(134, 26);
             this.bntInitVector.TabIndex = 13;
             this.bntInitVector.Text = "New Random Init Vector";
             this.bntInitVector.UseVisualStyleBackColor = true;
@@ -218,10 +202,9 @@
             // 
             // bntKey
             // 
-            this.bntKey.Location = new System.Drawing.Point(65, 148);
-            this.bntKey.Margin = new System.Windows.Forms.Padding(4);
+            this.bntKey.Location = new System.Drawing.Point(49, 120);
             this.bntKey.Name = "bntKey";
-            this.bntKey.Size = new System.Drawing.Size(179, 32);
+            this.bntKey.Size = new System.Drawing.Size(134, 26);
             this.bntKey.TabIndex = 12;
             this.bntKey.Text = "New Random Key";
             this.bntKey.UseVisualStyleBackColor = true;
@@ -230,10 +213,9 @@
             // radRC2
             // 
             this.radRC2.AutoSize = true;
-            this.radRC2.Location = new System.Drawing.Point(183, 52);
-            this.radRC2.Margin = new System.Windows.Forms.Padding(4);
+            this.radRC2.Location = new System.Drawing.Point(137, 42);
             this.radRC2.Name = "radRC2";
-            this.radRC2.Size = new System.Drawing.Size(56, 21);
+            this.radRC2.Size = new System.Drawing.Size(46, 17);
             this.radRC2.TabIndex = 3;
             this.radRC2.TabStop = true;
             this.radRC2.Text = "RC2";
@@ -243,10 +225,9 @@
             // radRijndael
             // 
             this.radRijndael.AutoSize = true;
-            this.radRijndael.Location = new System.Drawing.Point(11, 52);
-            this.radRijndael.Margin = new System.Windows.Forms.Padding(4);
+            this.radRijndael.Location = new System.Drawing.Point(8, 42);
             this.radRijndael.Name = "radRijndael";
-            this.radRijndael.Size = new System.Drawing.Size(80, 21);
+            this.radRijndael.Size = new System.Drawing.Size(63, 17);
             this.radRijndael.TabIndex = 2;
             this.radRijndael.TabStop = true;
             this.radRijndael.Text = "Rijndael";
@@ -256,10 +237,9 @@
             // radTripleDES
             // 
             this.radTripleDES.AutoSize = true;
-            this.radTripleDES.Location = new System.Drawing.Point(183, 23);
-            this.radTripleDES.Margin = new System.Windows.Forms.Padding(4);
+            this.radTripleDES.Location = new System.Drawing.Point(137, 19);
             this.radTripleDES.Name = "radTripleDES";
-            this.radTripleDES.Size = new System.Drawing.Size(97, 21);
+            this.radTripleDES.Size = new System.Drawing.Size(76, 17);
             this.radTripleDES.TabIndex = 1;
             this.radTripleDES.TabStop = true;
             this.radTripleDES.Text = "Triple DES";
@@ -269,10 +249,9 @@
             // radDES
             // 
             this.radDES.AutoSize = true;
-            this.radDES.Location = new System.Drawing.Point(12, 23);
-            this.radDES.Margin = new System.Windows.Forms.Padding(4);
+            this.radDES.Location = new System.Drawing.Point(9, 19);
             this.radDES.Name = "radDES";
-            this.radDES.Size = new System.Drawing.Size(57, 21);
+            this.radDES.Size = new System.Drawing.Size(47, 17);
             this.radDES.TabIndex = 0;
             this.radDES.TabStop = true;
             this.radDES.Text = "DES";
@@ -281,12 +260,11 @@
             // 
             // txtinitVector
             // 
-            this.txtinitVector.Location = new System.Drawing.Point(7, 310);
-            this.txtinitVector.Margin = new System.Windows.Forms.Padding(4);
+            this.txtinitVector.Location = new System.Drawing.Point(5, 252);
             this.txtinitVector.Multiline = true;
             this.txtinitVector.Name = "txtinitVector";
             this.txtinitVector.ReadOnly = true;
-            this.txtinitVector.Size = new System.Drawing.Size(286, 62);
+            this.txtinitVector.Size = new System.Drawing.Size(216, 51);
             this.txtinitVector.TabIndex = 15;
             // 
             // groupBox1
@@ -295,11 +273,9 @@
             this.groupBox1.Controls.Add(this.radRijndael);
             this.groupBox1.Controls.Add(this.radTripleDES);
             this.groupBox1.Controls.Add(this.radDES);
-            this.groupBox1.Location = new System.Drawing.Point(5, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(4, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(288, 97);
+            this.groupBox1.Size = new System.Drawing.Size(216, 79);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Symmetric Algorithms";
@@ -315,21 +291,22 @@
             this.tableLayoutPanel1.Controls.Add(this.groupBox3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.groupBox5, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.groupBox4, 0, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(300, 15);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(225, 12);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(597, 411);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(448, 334);
             this.tableLayoutPanel1.TabIndex = 22;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 438);
+            this.ClientSize = new System.Drawing.Size(762, 356);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnDecrypt);
             this.Controls.Add(this.btnEncrypt);
@@ -339,7 +316,6 @@
             this.Controls.Add(this.txtinitVector);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Symmetric Algorithms";
